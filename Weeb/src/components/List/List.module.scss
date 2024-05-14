@@ -1,0 +1,66 @@
+.list {
+  font-family: "Mitr", sans-serif;
+  width: 12rem;
+  margin-bottom: 1rem;
+  img {
+    width: 100%;
+    aspect-ratio: 4/5.5;
+
+    background: white;
+    border-radius: 1px;
+    box-shadow: 10px 10px 5px -5px black;
+    transition: 0.3s all ease-in-out;
+
+    &:hover {
+      transform: scale(1.18);
+      box-shadow: none;
+
+      .title {
+        opacity: 1;
+      }
+    }
+  }
+
+  .title {
+    color: mediumspringgreen;
+    z-index: 5;
+    opacity: 0.7;
+    font-weight: inherit;
+    font-size: 0.85rem;
+    text-align: center;
+    max-width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  @media (max-width: 541px) {
+    width: auto;
+    position: relative;
+    img {
+      width: 100%;
+      border-radius: 2px;
+      &:hover {
+        transform: none;
+      }
+    }
+    .title {
+      display: none;
+    }
+
+    &:hover {
+      .title {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        bottom: 0;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.8);
+        color: white;
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.main {
+  margin: 1rem auto;
+  .sortby {
+    color: orange;
+    margin: auto 0 -5rem 2rem;
+
+    select {
+      border: none;
+      padding: 3px;
+      border-radius: 1px;
+      color: black;
+      background: #07a15e;
+      background: mediumspringgreen;
+      cursor: pointer;
+
+      option {
+        background: lightskyblue;
+        color: black;
+      }
+    }
+  }
+
+  .animes {
+    margin: 6rem auto;
+  }
+}

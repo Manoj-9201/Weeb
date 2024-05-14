@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Mitr&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #12181b;
+  /* background: #22303c; */
+  color: white;
+  font-family: "Mitr", cursive, monospace, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: 0.5s all ease-in-out;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+::selection {
+  background: mediumspringgreen;
+  color: black;
+}
+
+@media (max-width: 541px) {
+  body {
+    background: #22303c;
+    background: rgba(0, 0, 0, 0);
+  }
+}
+
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+  background: inherit;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 20px;
+  border: 1px solid black;
+}
